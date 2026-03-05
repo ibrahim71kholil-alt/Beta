@@ -37,3 +37,24 @@ firebase.initializeApp(firebaseConfig);
 
 </body>
 </html>
+<button onclick="login()">Login</button>
+<script>
+function login(){
+
+var email = document.getElementById("email").value;
+var password = document.getElementById("password").value;
+
+firebase.auth().signInWithEmailAndPassword(email, password)
+.then((userCredential) => {
+
+alert("Login Successful");
+
+})
+.catch((error) => {
+
+alert(error.message);
+
+});
+
+}
+</script>
