@@ -1,16 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="bn">
 <head>
-<title>Beta</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>স্বপ্নছোঁয়া ইলেকট্রনিক্স এন্ড ব্যাটারী হাউজ</title>
+    <!-- Tailwind CSS (কুইক ডিজাইনের জন্য) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+<body class="dark-mode font-sans antialiased text-gray-200">
 
-<body>
+    <!-- Header & Navigation -->
+    <header class="bg-gray-900 shadow-md">
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center">
+                <!-- Replace with your logo -->
+                <img src="logo.png" alt="স্বপ্নছোঁয়া ইলেকট্রনিক্স" class="h-16 md:h-20 mr-4">
+                <span class="text-2xl font-bold text-white hidden md:block">স্বপ্নছোঁয়া</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="nav-link">হোম</a>
+                <a href="#about" class="nav-link">আমাদের সম্পর্কে</a>
+                <a href="#services" class="nav-link">সার্ভিস</a>
+                <a href="#products" class="nav-link">প্রোডাক্ট</a>
+                <a href="#portfolio" class="nav-link">পোর্টফোলিও</a>
+                <a href="#contact" class="nav-link">যোগাযোগ</a>
+            </div>
+            <!-- Mobile Menu Icon (You'll need JS to make it work) -->
+            <button class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </nav>
+    </header>
 
-<h1>Welcome To Beta Website</h1>
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg relative text-white py-32 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
+                    আপনার শক্তি, আমাদের দায়িত্ব: সম্পূর্ণ সোলার ও ব্যাটারি সলিউশন
+                </h1>
+                <p class="text-lg text-gray-300 mb-8 max-w-lg mx-auto md:mx-0">
+                    আমরা অভিজ্ঞ ইঞ্জিনিয়ার দিয়ে উন্নত প্রযুক্তির সোলার সিস্টেম ও লং-লাস্টিং ব্যাটারি সলিউশন প্রদান করি।
+                </p>
+                <a href="#contact" class="cta-button">ফ্রি কনসালটেশন</a>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://via.placeholder.com/600x400.png?text=Solar+Project+Placeholder" alt="সোলার প্যানেল" class="rounded-xl shadow-2xl">
+            </div>
+        </div>
+    </section>
 
-<a href="login.html">Login</a>
-<br><br>
-<a href="register.html">Register</a>
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-6 bg-gray-900">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12 text-white">আমাদের সার্ভিসসমূহ</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card p-8 bg-gray-800 rounded-xl">
+                    <img src="https://via.placeholder.com/80x80.png?text=Solar" alt="সোলার সার্ভিস" class="mx-auto mb-6">
+                    <h3 class="text-xl font-semibold mb-3 text-cyan-400">রূফটপ সোলার ইনস্টলেশন</h3>
+                    <p class="text-gray-400">বাসাবাড়ি বা ফ্যাক্টরির জন্য সম্পূর্ণ অন-গ্রিড বা হাইব্রিড সোলার সিস্টেম সেটআপ।</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card p-8 bg-gray-800 rounded-xl">
+                    <img src="https://via.placeholder.com/80x80.png?text=IPS" alt="আইপিএস সার্ভিস" class="mx-auto mb-6">
+                    <h3 class="text-xl font-semibold mb-3 text-cyan-400">আইপিএস ও ইউপিএস সিস্টেম</h3>
+                    <p class="text-gray-400">লোডশেডিং থেকে মুক্তি পেতে উন্নত আইপিএস এবং ইউপিএস ইনস্টলেশন।</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card p-8 bg-gray-800 rounded-xl">
+                    <img src="https://via.placeholder.com/80x80.png?text=Battery" alt="ব্যাটারি সার্ভিস" class="mx-auto mb-6">
+                    <h3 class="text-xl font-semibold mb-3 text-cyan-400">লিথিয়াম/টিউবুলার ব্যাটারি সেটআপ</h3>
+                    <p class="text-gray-400">দীর্ঘস্থায়ী ব্যবহারের জন্য বিভিন্ন ধরনের আধুনিক ব্যাটারি সলিউশন।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 px-6 bg-gray-800">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12 text-white">আলোচিত প্রোডাক্ট</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="product-card p-6 bg-gray-900 rounded-xl border border-gray-700">
+                    <img src="https://via.placeholder.com/250x180.png?text=Inverter" alt="ইনভার্টার" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-lg font-semibold mb-1 text-white">1100VA Hybrid Inverter</h3>
+                    <p class="text-gray-400 text-sm mb-4">On/Off-Grid Mixed</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-orange-400 font-bold text-xl">BDT 15,500</span>
+                        <a href="#contact" class="buy-button">কার্টে যোগ করুন</a>
+                    </div>
+                </div>
+                <!-- Add other products similar to this one -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-10 px-6 border-t border-gray-700">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
+            <div>
+                <img src="logo.png" alt="স্বপ্নছোঁয়া" class="h-16 mb-4">
+                <p>আমরা সোলার ও ব্যাটারি সলিউশন প্রদানে প্রতিশ্রুতিবদ্ধ।</p>
+            </div>
+            <!-- Add other footer sections -->
+        </div>
+    </footer>
 
 </body>
 </html>
